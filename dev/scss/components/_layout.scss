@@ -1,0 +1,219 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html,body{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+body{
+	background:url(../images/elim-back.jpg) no-repeat 0 0 fixed;
+	background-size:cover;
+	opacity:0;
+	animation: show-content 0.7s ease-in 1;
+	animation-fill-mode:forwards;
+	overflow-x:hidden;
+}
+// layout
+.wrapper{	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content:flex-start;
+	align-items:stretch;
+}
+.left-col{
+	width: 65%;	
+	position:relative;
+	display: block;
+	background:	-webkit-linear-gradient(top, rgba(72, 85, 99,0.92), rgba(41, 50, 60,0.92));
+	background:	-o-linear-gradient(top, rgba(72, 85, 99,0.92), rgba(41, 50, 60,0.92));
+	background:	-moz-linear-gradient(top, rgba(72, 85, 99,0.92), rgba(41, 50, 60,0.92));
+	background:	linear-gradient(top, rgba(72, 85, 99,0.92), rgba(41, 50, 60,0.92));
+	padding:0 3%;
+}
+.right-col{
+	width: 35%;
+	position:relative;
+	background:	rgba(255,255,255,0.94);
+	overflow-y:scroll;
+}
+
+// site titles
+.title,.subtitle{
+position: absolute;
+}
+.title{
+	text-align:center;
+	top:8%;
+	right: 3%;
+}
+.subtitle{	
+	top:5%;	
+	left: 3%;
+}
+
+// table position
+#table-position{
+	position:absolute;
+	bottom: 7%;
+	display: block;	
+	width: 91%;
+}
+
+// Table legend
+.legend{
+	border-top:1px solid #5E5E5E;
+	padding-top: 20px;
+	text-align:right;
+	color:white;
+	div{
+		display: inline-block;
+	}
+}
+.legend-bullet{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius:50%;
+	margin-left: 20px;
+}
+
+// game calendar & scores
+
+#hexagonal{
+	position: relative;	
+	margin-top: 0;	
+}
+
+.match-day-container{
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:center;
+}
+
+.match{
+	width: 100%;
+	max-width:300px;
+	margin:0 auto;
+	margin-bottom: 50px;
+}
+
+.teams-playing, .teams-score{
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content:space-between;	
+	position:relative;
+	.team, input{
+		width: 50%;
+		text-align: center;
+	}
+}
+.teams-score{
+	background:$darken;
+	margin-top: 5px;
+	&:before{
+		content:'';
+		background: url(../images/soccerball.png);
+		background-size:30px 30px;
+		position:absolute;
+		display: inline-block;
+		top:-10px;
+		left: calc(50% - 15px;);;
+		width: 30px;
+		height: 30px;
+	}
+}
+
+// media queries
+@media screen and (min-device-width:767px){
+	.left-col{
+		padding-top: 20px;
+		opacity: 0;
+		animation: leftColAnimate 0.6s ease-in 1;
+		animation-fill-mode: forwards;
+		animation-delay:1s;
+		transform: translateX(-4em);
+	}
+	.right-col{
+		transform: translateX(4em);
+		opacity:0;
+		animation: rightColAnimate 0.6s ease-in 1;
+		animation-fill-mode: forwards;
+		animation-delay:1s;
+	}
+}
+
+@media screen and (max-device-width:768px){
+	#hexagonal{
+		margin-top: 0;
+	}
+	.match-day-container{
+		flex-flow:row wrap;
+	}
+	.match-day{
+		width: 100%;
+	}
+	.match{
+		width: 30%;
+	}
+	.wrapper{	
+		flex-direction:column;
+
+		.left-col, .right-col{
+			width: 100%;
+		}
+		.left-col{
+			padding-top: 20px;
+		}
+		.title, .subtitle{
+			position: relative;
+			display: inline-block;
+			font-size:24px;
+			top:0;
+			line-height: 1.5;
+			left:auto;
+			right:auto;
+		}
+		#table-position{
+			position: relative;
+			width: 80%;
+			padding-bottom: 20px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px){
+	.match-day-container{
+		flex-flow:column wrap;
+	}
+	.match{
+		width: 100%;
+	}
+	.wrapper{
+		display: block;
+		#table-position{
+			width: 95%;
+			padding-bottom: 20px;
+		}		
+	}
+	.left-col{
+		display: none;
+	}
+	.legend{
+		div{
+			display:block;
+		}
+	}	
+	.open-table-mobile{
+		display: block;
+	}
+	
+}

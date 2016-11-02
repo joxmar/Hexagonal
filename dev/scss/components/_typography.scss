@@ -1,0 +1,104 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size:1em;
+	letter-spacing:0.05em;
+	color:$darken;
+}
+h2,h4,h5,h6,th{
+	font-family: 'Raleway', sans-serif;
+}
+h1{
+	font-size:5.625em;
+	color:$highlights;
+	font-weight:800;
+	font-style:italic;
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-size:3.125em;
+	color:white;
+	font-weight:800;
+	padding: 0;
+	margin: 0;
+
+	span{
+		font-weight: 300;
+	}
+}
+
+// table
+th{
+	font-weight:800;
+}
+
+// legend
+.legend{	
+		font-size: 0.750em;	
+}
+
+// scores & schedule
+.match-day{
+	font-size:1.313em;
+	color:white;
+	background:$highlights;
+	font-weight: normal;
+	padding: 10px 0;
+	text-align:center;
+}
+.team{
+	span{
+		font-size: 0.7em;
+		text-transform: uppercase;
+		font-weight:800;
+		display: block;
+		line-height: 1.5;		
+	}
+}
+.teams-score{
+	input{
+		font-size: 1.875em;
+		color: $score-color;
+		font-weight: 800;
+	}
+}
+h4{
+	font-size:0.875em;
+	color:$highlights;
+	text-align:center;
+}
+span.trin-ipad{
+	display:none ;
+}
+
+#back-to-top{
+	position:fixed;
+	bottom:0;
+	left: 0;
+	right: 0;
+	text-align:center;
+	@extend .qualified-team;
+	text-decoration:none;
+	color:white;
+	padding: 10px 0;
+	display: none;
+}
+@media screen and (max-device-width:768px){
+	span.trin-full{
+		display:none ;
+	}
+	span.trin-ipad{
+		display:block ;
+	}
+}
+@media screen and (max-device-width:600px){
+	span.trin-full{
+		display:block ;
+	}
+	span.trin-ipad{
+		display:none ;
+	}
+	a.show-back-to-top{
+		display: block!important;
+	}
+}

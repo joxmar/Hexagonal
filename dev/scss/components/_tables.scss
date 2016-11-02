@@ -1,0 +1,86 @@
+table{
+	width: 100%;
+	display: table;
+
+	th{
+		color:$highlights;
+		background:transparent;
+		padding: 12px 0;
+		font-size: 1.125em;
+
+		&:last-child{
+			color:white;
+			background:$highlights;			
+		}
+	}	
+	td{
+		border-top:1px solid #5E5E5E;
+		vertical-align: middle;
+		padding: 18px 0 18px 4px;
+		text-align: center;
+		color: white;
+		font-size: 1.125em;
+
+		&:first-child{
+			text-align:left;
+			border-left:4px solid transparent;			
+		}
+
+		img{
+			vertical-align: middle;
+			margin-right: 7px;
+			margin-top: -5px;
+			display: inline-block;
+		}
+
+		&:last-child{
+			color:white;
+			background:$highlights;
+		}		
+	}
+
+	tfoot{
+		td{
+			background:transparent;
+		}
+	}
+}
+
+// Qualified teams
+tbody{
+	tr{		
+		&:nth-child(-n+3){
+			td{
+				border-left-color:$qualified;
+			}
+		}
+		&:nth-child(4){
+			td{
+				border-left-color:$score-color;
+			}
+		}
+	}
+}
+@media screen and (max-device-width:768px){
+	table{
+		td{
+			padding: 8px 0 8px 4px;
+			font-size: 1em;
+		}
+	}
+}
+@media screen and (max-device-width:600px){
+	table{
+		th{
+			font-size: 0.725em;
+		}
+		td{
+			padding: 4px 0 4px 4px;
+			font-size: 0.725em;
+
+			img{
+				display: none;
+			}
+		}
+	}
+}

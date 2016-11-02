@@ -1,0 +1,34 @@
+@keyframes show-content{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes leftColAnimate{
+	from{
+		transform: translateX(-4em);
+		// visibility: hidden;
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		// visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes rightColAnimate{
+	from{
+		transform: translateX(4em);
+		// visibility: hidden;
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		// visibility: visible;
+		opacity: 1;
+	}
+}
