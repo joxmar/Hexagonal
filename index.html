@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Eliminatoria Mundialista de la Concacaf</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+ <meta name="keywords" content="">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Raleway:300,800" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="icon" 
+      type="image/png" 
+      href="images/soccerball.png">
+</head>
+<body>
+<div class="wrapper">
+<div id="mobile-hdr">
+	<button id="mobile-table" class="mobile-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+	</div>
+	<section id="standings-container" class="left-col">		
+		<h1 class="title">RUSIA 2016</h1>
+		<h2 class="subtitle"><span>CONCACAF</span> HEXAGONAL</h2>
+		<div id="table-position">
+			<table id="hexagonal-table">
+				<thead>
+					<th></th>
+					<th>PJ</th>
+					<th>PG</th>
+					<th>PE</th>
+					<th>PP</th>
+					<th>GF</th>
+					<th>GC</th>
+					<th>GD</th>
+					<th>PTS</th>
+				</thead>		
+				<tbody></tbody>
+			</table>
+			<div class="legend">
+				<div><span class="legend-bullet qualified-team"></span> Clasificado al Mundial</div> <div><span class="legend-bullet repechage-team"></span> Calsificado al repechaje contra Conmebol</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="right-col">
+		<div id="hexagonal">
+			<!-- ******************************************
+			  Matchday 1
+			***********************************************-->
+			<div id="match-day-1" class="match-day-container">
+				<h3 class="match-day">Jornada 1 &mdash; 11/11/2016</h3>
+				<!-- Match 1-->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="us1" class="team">
+							<img src="images/usa-flag.png" alt="" width="80"><br>
+							<span>Estados Unidos</span>
+						</label>
+						<label for="mex1" class="team">
+							<img src="images/mex-flag.png" alt="" width="80"><br>
+							<span>Mexico</span>
+						</label>
+					</div>
+					<div id="match-score-1" class="teams-score">
+						<input id="us1" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" maxlength="2" placeholder="-">
+						<input id="mex1" type="number" class="visitor" data-team="mexico" onBlur="updateGame(this);" maxlength="2" max="2" placeholder="-">								
+					</div>
+					<h4>Mapfre Stadium, Columbus</h4>
+				</div>
+				<!-- Match 2 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="hon1" class="team">						
+							<img src="images/hon-flag.png" alt="" width="80"><br>
+							<span>Honduras</span>
+						</label>					
+						<label for="pan1" class="team">						
+							<img src="images/pan-flag.png" alt="" width="80"><br>
+							<span>Panama</span>
+						</label>					
+					</div>
+					<div id="match-score-2" class="teams-score">
+						<input id="hon1" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="1" max="99" placeholder="-">
+						<input id="pan1" type="number" class="visitor" data-team="panama" onBlur="updateGame(this);" min="1" max="99" placeholder="-">					
+					</div>
+					<h4>Estadio Olimpico, San Pedro Sula</h4>				
+				</div>	
+				<!-- Match 3 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="tri1" class="team">						
+							<img src="images/tri-flag.png" alt="" width="80"><br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>					
+						<label for="cos1" class="team">						
+							<img src="images/cos-flag.png" alt="" width="80"><br>
+							<span>Costa Rica</span>
+						</label>					
+					</div>
+					<div id="match-score-3" class="teams-score">
+						<input id="tri1" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="1" max="99" placeholder="-">
+						<input id="cos1" type="number" class="visitor" data-team="costaRica" onBlur="updateGame(this);" min="1" max="99" placeholder="-">					
+					</div>
+					<h4>Hasely Crawford, Puerto Espana</h4>				
+				</div>		
+			</div>
+			<!-- ******************************************
+			  Matchday 2
+			***********************************************-->
+			<div id="match-day-2" class="match-day-container">
+				<h3 class="match-day">Jornada 2 &mdash; 11/15/2016</h3>
+				<!-- Match 4 -->	
+				<div class="match">
+					<div class="teams-playing">
+						<label for="cos2" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>
+						<label for="us2" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>
+					</div>
+					<div id="match-score-4" class="teams-score">
+						<input id="cos2" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="us2" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Nacional, San Jose</h4>				
+				</div>
+				<!-- Match 5 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="pan2" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>
+						<label for="mex2" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>
+					</div>
+					<div id="match-score-5" class="teams-score">
+						<input id="pan2" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="mex2" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Romel Fernandez, Panama</h4>				
+				</div>
+				<!-- Match 6 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="hon2" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+						<label for="tri2" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>
+					</div>
+					<div id="match-score-6" class="teams-score">
+						<input id="hon2" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="tri2" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Nacional, Tegucigalpa</h4>				
+				</div>
+			</div>
+			<!-- ******************************************
+			  Matchday 3
+			***********************************************-->
+			<div id="match-day-3" class="match-day-container">
+				<h3 class="match-day">Jornada 3 &mdash; 03/24/2017</h3>
+				<!-- Match 7 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="us3" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>
+						<label for="hon3" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+					</div>
+					<div id="match-score-7" class="teams-score">
+						<input id="us3" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="hon3" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Mapfre Stadium, Columbus</h4>				
+				</div>
+				<!-- Match 8 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="tri3" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>
+						<label for="pan3" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>
+					</div>
+					<div id="match-score-8" class="teams-score">
+						<input id="tri3" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="pan3" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Hasely Crawford, Puerto Espana</h4>		
+				</div>
+				<!-- Match 9 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="mex3" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label><label for="cos3" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>
+					</div>
+					<div id="match-score-9" class="teams-score">
+						<input id="mex3" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="cos3" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Azteca, Ciudad de Mexico</h4>				
+				</div>
+			</div>
+			<!-- ******************************************
+			  Matchday 4
+			***********************************************-->
+			<div id="match-day-4" class="match-day-container">
+				<h3 class="match-day">Jornada 4 &mdash; 03/28/2017</h3>
+				<!-- Match 10 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="pan4" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>
+						<label for="us4" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>
+					</div>
+					<div id="match-score-10" class="teams-score">
+						<input id="pan4" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="us4" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Romel Fernandez, Panama</h4>				
+				</div>
+				<!-- Match 11 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="hon4" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+						<label for="cos4" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>
+					</div>
+					<div id="match-score-11" class="teams-score">
+						<input id="hon4" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="cos4" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Olimpico, San Pedro Sula</h4>				
+				</div>
+				<!-- Match 12 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="tri4" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>
+						<label for="mex4" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>
+					</div>
+					<div id="match-score-12" class="teams-score">
+						<input id="tri4" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="mex4" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Hasely Crawford, Puerto Espana</h4>				
+				</div>
+			</div>
+			<!-- ******************************************
+			  Matchday 5
+			***********************************************-->
+			<div id="match-day-5" class="match-day-container">
+				<h3 class="match-day">Jornada 5 &mdash; 06/07/2017</h3>
+				<!-- Match 13 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="us5" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>
+						<label for="tri5" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>
+					</div>
+					<div id="match-score-13" class="teams-score">
+						<input id="us5" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="tri5" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Mapfre Stadium, Columbus</h4>				
+				</div>
+				<!-- Match 14 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="cos5" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>
+						<label for="pan5" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>
+					</div>
+					<div id="match-score-14" class="teams-score">
+						<input id="cos5" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="pan5" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4></h4>				
+				</div>
+				<!-- Match 15 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="mex5" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>
+						<label for="hon5" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+					</div>
+					<div id="match-score-15" class="teams-score">
+						<input id="mex5" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="hon5" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Azteca, Ciudad de Mexico</h4>				
+				</div>
+			</div>
+			<!-- ******************************************
+			  Matchday 6
+			***********************************************-->
+			<div id="match-day-6" class="match-day-container">
+				<h3 class="match-day">Jornada 6 &mdash; 06/11/2016</h3>
+				<!-- Match 16 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="mex6" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>
+						<label for="us6" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>
+					</div>
+					<div id="match-score-16" class="teams-score">
+						<input id="mex6" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="us6" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Azteca, Ciudad de Mexico</h4>				
+				</div>
+				<!-- Match 17 -->
+				<div class="match">
+					<div class="teams-playing">										
+						<label for="pan6" class="team">						
+							<img src="images/pan-flag.png" alt="" width="80"><br>
+							<span>Panama</span>
+						</label>	
+						<label for="hon1" class="team">						
+							<img src="images/hon-flag.png" alt="" width="80"><br>
+							<span>Honduras</span>
+						</label>					
+					</div>
+					<div id="match-score-17" class="teams-score">
+						<input id="pan6" type="number" class="visitor" data-team="panama" onBlur="updateGame(this);" min="1" max="99" placeholder="-">	
+						<input id="hon1" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="1" max="99" placeholder="-">										
+					</div>
+					<h4>Estadio Romel Fernandez, Panama</h4>				
+				</div>	
+				<!-- Match 18 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="cos1" class="team">						
+							<img src="images/cos-flag.png" alt="" width="80"><br>
+							<span>Costa Rica</span>
+						</label>
+						<label for="tri6" class="team">						
+							<img src="images/tri-flag.png" alt="" width="80"><br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>					
+					</div>
+					<div id="match-score-18" class="teams-score">						
+						<input id="cos1" type="number" class="visitor" data-team="costaRica" onBlur="updateGame(this);" min="1" max="99" placeholder="-">
+						<input id="tri6" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="1" max="99" placeholder="-">
+					</div>
+					<h4>Estadio Nacional, San Jose</h4>				
+				</div>	
+			</div>	
+			<!-- ******************************************
+			  Matchday 7
+			***********************************************-->
+			<div id="match-day-7" class="match-day-container">
+				<h3 class="match-day">Jornada 7 &mdash; 07/01/2017</h3>
+				<!-- Match 19 -->	
+				<div class="match">
+					<div class="teams-playing">						
+						<label for="us7" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>
+						<label for="cos7" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>
+					</div>
+					<div id="match-score-19" class="teams-score">
+						<input id="us7" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="cos7" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Mapfre Stadium, Columbus</h4>				
+				</div>
+				<!-- Match 20 -->
+				<div class="match">
+					<div class="teams-playing">						
+						<label for="mex7" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>
+						<label for="pan7" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>
+					</div>
+					<div id="match-score-20" class="teams-score">
+						<input id="mex7" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="pan7" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Estadio Azteca, Ciudad de Mexico</h4>				
+				</div>
+				<!-- Match 21-->
+				<div class="match">
+					<div class="teams-playing">						
+						<label for="tri7" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>
+						<label for="hon7" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+					</div>
+					<div id="match-score-21" class="teams-score">
+						<input id="tri7" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="hon7" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Hasely Crawford, Puerto España</h4>				
+				</div>
+			</div>
+			<!-- ******************************************
+			  Matchday 8
+			***********************************************-->
+			<div id="match-day-8" class="match-day-container">
+				<h3 class="match-day">Jornada 8 &mdash; 09/05/2017</h3>
+				<!-- Match 22 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="hon8" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+						<label for="us8" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>						
+					</div>
+					<div id="match-score-22" class="teams-score">
+						<input id="hon8" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="us8" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Estdio Olimpico, San Pedro Sula</h4>				
+				</div>
+				<!-- Match 23 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="pan8" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>
+						<label for="tri8" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>						
+					</div>
+					<div id="match-score-23" class="teams-score">
+						<input id="pan8" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="tri8" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Estadio Romel Fernandez, Panama</h4>		
+				</div>
+				<!-- Match 24 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="cos8" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>
+						<label for="mex8" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>						
+					</div>
+					<div id="match-score-24" class="teams-score">
+						<input id="cos8" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="mex8" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Estadio Nacional, San Jose</h4>				
+				</div>
+			</div>
+			<!-- ******************************************
+			  Matchday 9
+			***********************************************-->
+			<div id="match-day-9" class="match-day-container">
+				<h3 class="match-day">Jornada 9 &mdash; 10/06/2017</h3>
+				<!-- Match 25 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="us9" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>
+						<label for="pan9" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>						
+					</div>
+					<div id="match-score-25" class="teams-score">
+						<input id="us9" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="pan9" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Mapfre Stadium, Columbus</h4>				
+				</div>
+				<!-- Match 26 -->
+				<div class="match">
+					<div class="teams-playing">						
+						<label for="cos9" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>
+						<label for="hon9" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+					</div>
+					<div id="match-score-26" class="teams-score">
+						<input id="cos9" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="hon9" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Estadio Nacional, San Jose</h4>				
+				</div>
+				<!-- Match 27 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="mex9" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>
+						<label for="tri9" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>						
+					</div>
+					<div id="match-score-27" class="teams-score">						
+						<input id="mex4" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="tri4" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+					</div>
+					<h4>estadio Azteca, Ciudad de Mexico</h4>				
+				</div>
+			</div>
+			<!-- ******************************************
+			  Matchday 10
+			***********************************************-->
+			<div id="match-day-10" class="match-day-container">
+				<h3 class="match-day">Jornada 10 &mdash; 10/10/2017</h3>
+				<!-- Match 28 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="tri10" class="team">
+							<img src="images/tri-flag.png" alt="" width="80">
+							<br>
+							<span class="trin-full">Trinidad &amp; Tobago</span><span class="trin-ipad">Trin. &amp; Tob.</span>
+						</label>
+						<label for="us10" class="team">
+							<img src="images/usa-flag.png" alt="" width="80">
+							<br>
+							<span>Estados Unidos</span>
+						</label>						
+					</div>
+					<div id="match-score-28" class="teams-score">
+						<input id="tri10" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="us10" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Hasely Crawford, Puerto España</h4>				
+				</div>
+				<!-- Match 29 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="pan10" class="team">
+							<img src="images/pan-flag.png" alt="" width="80">
+							<br>
+							<span>Panama</span>
+						</label>
+						<label for="cos10" class="team">
+							<img src="images/cos-flag.png" alt="" width="80">
+							<br>
+							<span>Costa Rica</span>
+						</label>						
+					</div>
+					<div id="match-score-29" class="teams-score">
+						<input id="pan10" type="number" class="local" data-team="panama" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="cos10" type="number" class="local" data-team="costaRica" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Estadio Romel Fernandez, Panama</h4>				
+				</div>
+				<!-- Match 30 -->
+				<div class="match">
+					<div class="teams-playing">
+						<label for="hon10" class="team">
+							<img src="images/hon-flag.png" alt="" width="80">
+							<br>
+							<span>Honduras</span>
+						</label>
+						<label for="mex10" class="team">
+							<img src="images/mex-flag.png" alt="" width="80">
+							<br>
+							<span>Mexico</span>
+						</label>						
+					</div>
+					<div id="match-score-30" class="teams-score">
+						<input id="hon10" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="0" max="99" placeholder="-">
+						<input id="mex10" type="number" class="local" data-team="mexico" onBlur="updateGame(this);" min="0" max="99" placeholder="-">						
+					</div>
+					<h4>Estadio Olimpico, San Pedro Sula</h4>				
+				</div>
+			</div>
+		</div>		
+	</section>
+	<a id="back-to-top">Regresar hacia arriba</a>
+	<script src="js/functions.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85900600-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html> 
