@@ -144,7 +144,7 @@ position: absolute;
 		opacity:0;
 		animation: rightColAnimate 0.6s ease-in 1;
 		animation-fill-mode: forwards;
-		animation-delay:1s;
+		animation-delay:1.125s;
 	}
 }
 
@@ -204,8 +204,19 @@ position: absolute;
 			padding-bottom: 20px;
 		}		
 	}
+	.right-col{
+		top: 35px;
+	}
 	.left-col{
-		display: none;
+		// display: none;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+		position: fixed;
+		top: 35px;
+		z-index: 9;
+		transition: all 0.4s ease-in-out;
+		overflow: hidden;
 	}
 	.legend{
 		div{
@@ -213,7 +224,10 @@ position: absolute;
 		}
 	}	
 	.open-table-mobile{
-		display: block;
+		// display: block;
+		height: auto;
+		opacity: 1;
+		visibility: visible;
 	}
 	
 }
