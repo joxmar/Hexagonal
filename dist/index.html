@@ -66,9 +66,9 @@
 							<span>Mexico</span>
 						</label>
 					</div>
-					<div id="match-score-1" class="teams-score">
-						<input id="us1" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" maxlength="2" placeholder="-">
-						<input id="mex1" type="number" class="visitor" data-team="mexico" onBlur="updateGame(this);" maxlength="2" max="2" placeholder="-">								
+					<div id="match-score-1" class="teams-score" data-game="played">
+						<input id="us1" type="number" class="local" data-team="uSa" onBlur="updateGame(this);" maxlength="2" value="1" readonly>
+						<input id="mex1" type="number" class="visitor" data-team="mexico" onBlur="updateGame(this);" maxlength="2" max="2" value="2" readonly>								
 					</div>
 					<h4>Mapfre Stadium, Columbus</h4>
 				</div>
@@ -84,9 +84,9 @@
 							<span>Panama</span>
 						</label>					
 					</div>
-					<div id="match-score-2" class="teams-score">
-						<input id="hon1" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="1" max="99" placeholder="-">
-						<input id="pan1" type="number" class="visitor" data-team="panama" onBlur="updateGame(this);" min="1" max="99" placeholder="-">					
+					<div id="match-score-2" class="teams-score" data-game="played">
+						<input id="hon1" type="number" class="local" data-team="honduras" onBlur="updateGame(this);" min="1" max="99" value="0" readonly>
+						<input id="pan1" type="number" class="visitor" data-team="panama" onBlur="updateGame(this);" min="1" max="99" value="1" readonly>					
 					</div>
 					<h4>Estadio Olimpico, San Pedro Sula</h4>				
 				</div>	
@@ -102,9 +102,9 @@
 							<span>Costa Rica</span>
 						</label>					
 					</div>
-					<div id="match-score-3" class="teams-score">
-						<input id="tri1" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="1" max="99" placeholder="-">
-						<input id="cos1" type="number" class="visitor" data-team="costaRica" onBlur="updateGame(this);" min="1" max="99" placeholder="-">					
+					<div id="match-score-3" class="teams-score" data-game="played">
+						<input id="tri1" type="number" class="local" data-team="trinidad" onBlur="updateGame(this);" min="1" max="99" value="0" readonly>
+						<input id="cos1" type="number" class="visitor" data-team="costaRica" onBlur="updateGame(this);" min="1" max="99" value="2" readonly>					
 					</div>
 					<h4>Hasely Crawford, Puerto Espana</h4>				
 				</div>		
