@@ -239,6 +239,8 @@ function showStandings(){
 			tableToday();
 		}
 	}
+
+	// back to top button
 	var winHeight  = window.innerHeight;
 	var backTotopBtn = document.getElementById('back-to-top');
 	window.onscroll = function(){
@@ -268,10 +270,23 @@ function showStandings(){
 	}
 	var showTableBtn = document.getElementById('mobile-table');
 	showTableBtn.addEventListener('click',showTableMobile,false);
-	// document ready
+	
+	// load document and rock & roll baby!
 	document.addEventListener('DOMContentLoaded', function(){ 
 		tableToday();
 	}, false);
+
+	/* Local Storage
+	when input triggers onblur event
+	grab the value and store it in a variable
+	the variable should match its correspondent input field so it goes in the correct place when loaded
+	when the page loads it looks for these variables, if they exist they should then be loaded on their 
+	respective input fields and then run table today
+
+		localStorage.setItem('myStorage', game.value);
+		console.log(localStorage.getItem('myStorage'));
+	*/
+
 	// Things to update on my own after each game:
 	// team scores
 	// add data-game="played" to every played game in the past
