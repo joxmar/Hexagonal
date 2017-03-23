@@ -101,6 +101,30 @@ position: absolute;
 	max-width:300px;
 	margin:0 auto;
 	margin-bottom: 50px;
+
+	h4{
+		position: relative;
+		.local-time {
+	    font-family: 'Open Sans', sans-serif;
+	    font-weight: 400;
+	    font-size: 0.80em;
+	    color: white;
+	    background: $darken;
+	    padding: 10px 8px;
+	    border-radius: 8px;
+	    position: absolute;
+	    top: -83px;
+	    line-height: 1.7;
+	    transform: scale(0);
+	    text-align: left;
+	    transition: all 0.3s ease-in-out;
+	    opacity: 0;
+		}
+		small:hover + .local-time, .local-time:hover{
+	    transform: scale(1);
+	    opacity: 1;
+		}
+	}
 }
 
 .teams-playing, .teams-score{
