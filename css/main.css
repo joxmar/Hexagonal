@@ -436,7 +436,21 @@ th {
 h4 {
   font-size: 0.875em;
   color: #FB6149;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.3; }
+  h4 small {
+    color: #29323C;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer; }
+    h4 small sup {
+      color: white;
+      background: #29323C;
+      padding: 0 4px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-left: 0px;
+      top: -0.3em; }
 
 span.trin-ipad {
   display: none; }
@@ -576,6 +590,26 @@ body {
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: 50px; }
+  .match h4 {
+    position: relative; }
+    .match h4 .local-time {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.80em;
+      color: white;
+      background: #29323C;
+      padding: 10px 8px;
+      border-radius: 8px;
+      position: absolute;
+      top: -83px;
+      line-height: 1.7;
+      transform: scale(0);
+      text-align: left;
+      transition: all 0.3s ease-in-out;
+      opacity: 0; }
+    .match h4 small:hover + .local-time, .match h4 .local-time:hover {
+      transform: scale(1);
+      opacity: 1; }
 
 .teams-playing, .teams-score {
   display: flex;
