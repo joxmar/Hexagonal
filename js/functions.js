@@ -290,5 +290,6 @@ function showStandings(){
 	// Things to update on my own after each game:
 	// team scores
 	// add data-game="played" to every played game in the past
+	// add live-match to team score for live scores
 
 	
