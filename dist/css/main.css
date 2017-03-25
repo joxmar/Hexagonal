@@ -634,6 +634,19 @@ body {
     left: calc(50% - 15px);
     width: 30px;
     height: 30px; }
+  .teams-score.live-match:after {
+    position: absolute;
+    content: "En Vivo";
+    color: white;
+    font-size: x-small;
+    background: firebrick;
+    padding: 2px 5px;
+    border-radius: 25px;
+    width: 50px;
+    text-align: center;
+    left: calc(50% - 25px);
+    bottom: -8px;
+    animation: livePulse linear 0.7s infinite alternate; }
 
 @media screen and (min-device-width: 767px) {
   .left-col {
@@ -719,6 +732,14 @@ body {
     height: auto;
     opacity: 1;
     visibility: visible; } }
+/* style */
+@keyframes livePulse {
+  from {
+    background: firebrick;
+    transform: translateY(0); }
+  to {
+    background: #e04343;
+    transform: translateY(4px); } }
 table {
   width: 100%;
   display: table; }
